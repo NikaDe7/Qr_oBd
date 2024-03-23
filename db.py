@@ -3,8 +3,18 @@ import sqlite3
 connect = sqlite3.connect('baza/list.db')
 cursor = connect.cursor()
 
-#Створити базу даних
-def db_plus():
+#Створити aдаптована таблиця з 1 колонкою
+def db_plus(name1, type1):
+    cursor.execute(""" CREATE TABLE IF NOT EXISTS expenses(""" + name1 + type1 + """) """)
+    connect.commit()
+
+#Створити базу даних для 2
+#def db_plus(type, ):
+#    cursor.execute(""" CREATE TABLE IF NOT EXISTS expenses(name TEXT, last_name TEXT, id INT) """)
+#    connect.commit()
+
+#Створити базу даних для 3
+def db_plus(type, ):
     cursor.execute(""" CREATE TABLE IF NOT EXISTS expenses(name TEXT, last_name TEXT, id INT) """)
     connect.commit()
 
@@ -28,6 +38,6 @@ def select_data_db():
     else:
         return 0;
 
-#Редагувати файл
+#Редагувати таблицю
 def alter_data_db():
     return 0
