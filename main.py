@@ -1,7 +1,7 @@
 import db ## бібліотека для бази даних
 
-def print_hi(name):
-    print("Hello")
+def print_hi():
+    print("Hi")
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print_hi()
