@@ -72,8 +72,8 @@ def db_delete(name_table):
     connect.commit()
 
 #Занести дані у таблицю
-def insert_data_db(name_table, index_column, data_column):
-    for i in index_column:
+def insert_data_db(name_table, data_column, size_data_column):
+    for i in size_data_column:
         if i==0:
             cursor.execute("INSERT INTO "+name_table+" VALUES(?);", data_column)
         elif i==1:
@@ -92,14 +92,36 @@ def insert_data_db(name_table, index_column, data_column):
             return 0
     connect.commit()
 
-#Винести дані з бази даних
-def select_data_db():
+#Винести всі дані з таблиці
+def select_all_data_db(name_table):
+    cursor.execute("SELECT * FROM "+name_table)
+    connect.commit()
+
+#Винести рядок з таблиці
+def select_data_db(name_table, id_row, number_column):
+    cursor.execute("SELECT * FROM"+name_table)
+    while True:
+        next_row = cursor.fetchone()
+        if next_row:
+            dict_data = {}
+            for i in range(number_column):
+                if i == number_column:
+                    dict_data[i] = next_row
+
+'''
+    dict_data = {}
+    for i in range(id_row):
+        if i==id_row:
+            dict_data[i] = []
+'''
+'''
     next_row = cursor.fetchone()
     if next_row:
         (a, b, c) = next_row
         return a, b, c
     else:
         return 0;
+'''
 
 #Редагувати таблицю
 def alter_data_db():
