@@ -66,15 +66,30 @@ def db_plus6(name_table, name1, type1, name2, type2, name3, type3, name4, type4,
     connect.commit()
 
 
-#Видалити базу даних
-def db_delete():
-    cursor.execute("DROP TABLE expenses")
+#Видалити таблицю
+def db_delete(name_table):
+    cursor.execute("DROP TABLE "+name_table)
     connect.commit()
 
-#Занести дані у базу даних
-def insert_data_db(name_register, ba, c):
-    main_list = [name_register, ba, c]
-    cursor.execute("INSERT INTO expenses VALUES(?,?,?);", main_list)
+#Занести дані у таблицю
+def insert_data_db(name_table, index_column, data_column):
+    for i in index_column:
+        if i==0:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?);", data_column)
+        elif i==1:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?);", data_column)
+        elif i==2:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?,?);", data_column)
+        elif i==3:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?,?,?);", data_column)
+        elif i==4:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?,?,?,?);", data_column)
+        elif i==5:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?,?,?,?,?);", data_column)
+        elif i==6:
+            cursor.execute("INSERT INTO "+name_table+" VALUES(?,?,?,?,?,?,?);", data_column)
+        else:
+            return 0
     connect.commit()
 
 #Винести дані з бази даних
