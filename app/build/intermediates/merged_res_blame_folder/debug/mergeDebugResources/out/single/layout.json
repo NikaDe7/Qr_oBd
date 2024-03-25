@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\fragment_welc_auth.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\fragment_welc_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\fragment_welc_reg.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\fragment_welc_reg.xml"
+    },
+    {
+        "merged": "com.example.obd_kotlin.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.example.obd_kotlin.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\activity_reg.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\activity_reg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\fragment_welc_main.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\fragment_welc_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\fragment_frag_welcome.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\fragment_frag_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-mergeDebugResources-46:\\layout\\fragment_frag_auth.xml",
+        "source": "C:\\Users\\Denidum\\.gradle\\daemon\\8.4\\com.example.obd_kotlin.app-main-49:\\layout\\fragment_frag_auth.xml"
+    }
+]
